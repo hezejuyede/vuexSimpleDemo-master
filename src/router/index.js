@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Homepage from '@/components/Homepage'
-import Citylist from '@/components/Citylist'
+import Homepage from '@/components/Homepage';
+import Citylist from '@/components/Citylist';
 
 Vue.use(Router);
 
