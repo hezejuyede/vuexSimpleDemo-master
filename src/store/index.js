@@ -40,7 +40,7 @@ Vue.use(Vuex);
 		// name就是调用此方法时要传的参数
 		setCityName({commit,state}, name){
 			// 跟后台打交道
-			// 调用mutaions里面的方法
+			// 调用mutations里面的方法
 			commit("setCity", name);
 		}
 	},
