@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 
 // 使用vuex
-import store from './store/store.js';
+import index from './store';
 
 Vue.config.productionTip = false;
 
@@ -13,7 +13,7 @@ Vue.config.productionTip = false;
 new Vue({
   el: '#app',
   router,
-  store,
+  store: index,
   template: '<App/>',
   components: {App}
 });
