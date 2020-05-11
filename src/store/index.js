@@ -57,12 +57,7 @@ Vue.use(Vuex);
 
 let index = new Vuex.Store({
   state,
-  getters: {
-    // 参数列表state指的是state数据
-    getCityFn(state) {
-      return state.city;
-    }
-  },
+  getters,
   actions,
   mutations
 });

@@ -1,1 +1,1 @@
-export const city = state => state.city;
+export const getCityFn = state => state.city;
