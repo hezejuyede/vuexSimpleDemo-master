@@ -19,8 +19,7 @@ Vue.use(Vuex);
 
 // vueComponent(组件) -> getters -> state
 
-/*
-let index = new Vuex.Store({
+/*let index = new Vuex.Store({
 	// 1. state
   state,
 
@@ -53,14 +52,17 @@ let index = new Vuex.Store({
 			state.city = name;
 		}
 	}
-});
-*/
+});*/
 
 
 let index = new Vuex.Store({
-
   state,
-  getters,
+  getters: {
+    // 参数列表state指的是state数据
+    getCityFn(state) {
+      return state.city;
+    }
+  },
   actions,
   mutations
 });
